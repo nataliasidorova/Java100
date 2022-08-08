@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.netology.javaqa</groupId>
-    <artifactId>Javasqr</artifactId>
+    <artifactId>Java100</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -48,12 +48,18 @@
                 </execution>
 
                     <execution>
-                        <id>check</id>
+                        <id>report</id>
                         <phase>verify</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>check</id>
                         <goals>
                             <goal>check</goal>
                         </goals>
-                        <configuration>
+                         <configuration>
                             <rules>
                                 <rule>
                                     <limits>
